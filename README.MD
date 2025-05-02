@@ -1,24 +1,12 @@
-Para criar micro serviços:
-```
-django-admin startproject nome_do_projeto_que_voce_escolher
-```
+# Lojinha B & D 🛒
 
-Criar ambiente virtual:
-```
-conda create -n nome_do_projeto_que_voce_escolher
-```
+Projeto para estudo de Django Rest Framework e ORACLE.
 
-Ativar ambiente virtual:
-```
-conda activate nome_do_projeto_que_voce_escolher
-```
+<div align = "center">
+<img src="https://static.vecteezy.com/system/resources/previews/024/653/455/non_2x/shopping-bag-free-png.png" alt="Logo em preto com detalhe verde, escrito agrada digital" width="150" height="200">
+</div>
 
-Rodar o projeto:
-````
+### Rodar o projeto ⚙️
+```
 python manage.py runserver
-```
-
-Rodar migrations:
-```
-python manage.py migrate
 ```
