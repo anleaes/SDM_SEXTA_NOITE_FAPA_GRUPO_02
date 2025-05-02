@@ -22,12 +22,3 @@ Rodar migrations:
 ```
 python manage.py migrate
 ```
-
-Database:
-```
-Username:ADMIN
-password: Kensydanielle1
-
-usuário admin local: danikensy
-senha: 123456
-```
