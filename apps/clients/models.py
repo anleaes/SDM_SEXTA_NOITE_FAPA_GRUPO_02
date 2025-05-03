@@ -13,6 +13,7 @@ class Client(models.Model):
         ('F', 'Feminino'),
         ('O', 'Outro'),
     )
+
     gender = models.CharField('Genero', max_length=1, choices=GENDER_CHOICES)
     client_socialNetwork = models.ManyToManyField(SocialNetwork, through='ClientSocialNetwork', blank=True)
 
@@ -23,3 +24,4 @@ class Client(models.Model):
 
     def __str__(self):
         return self.first_name
+    
