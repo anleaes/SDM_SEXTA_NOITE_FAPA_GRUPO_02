@@ -6,10 +6,8 @@ lojaapp/__pycache__/*
 /apps/products/migrations/*
 /apps/socialnetworks/__pycache__/*
 /apps/socialnetworks/migrations/*
-/apps/clients/_pycache_/*
+/apps/clients/__pycache__/*
 /apps/clients/migrations/*
-/apps/clientesocialnetwork/__pycache__/*
-/apps/clientesocialnetwork/migrations/*
 /apps/orders/__pycache__/*
 /apps/orders/migrations/*
 
