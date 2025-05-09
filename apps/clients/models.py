@@ -1,6 +1,7 @@
 from socialnetworks.models import SocialNetwork
+from django.db import models
 
-# Create your models here." e crie a classe "Client" do modelo.
+# Create your models here." 
 
 class Client(models.Model):
     first_name = models.CharField('Nome', max_length=50)
@@ -13,7 +14,6 @@ class Client(models.Model):
         ('F', 'Feminino'),
         ('O', 'Outro'),
     )
-
     gender = models.CharField('Genero', max_length=1, choices=GENDER_CHOICES)
     client_socialNetwork = models.ManyToManyField(SocialNetwork, through='ClientSocialNetwork', blank=True)
 
@@ -24,4 +24,15 @@ class Client(models.Model):
 
     def __str__(self):
         return self.first_name
-    
+
+class ClientSocialNetwork(models.Model):
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    socialNetwork = models.ForeignKey(SocialNetwork, on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = 'Item de Redes Social'
+        verbose_name_plural = 'Itens de Rede Social'
+        ordering =['id']
+
+    def __str__(self):
+        return self.socialNetwork.name 
